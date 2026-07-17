@@ -681,15 +681,6 @@
   margin-bottom: 12px;
 }
 
-.skill-tag--learning {
-  border-color: rgba(124, 58, 237, 0.3);
-  background: rgba(124, 58, 237, 0.06);
-}
-
-.skill-tag--learning:hover {
-  border-color: rgba(124, 58, 237, 0.5);
-  background: rgba(124, 58, 237, 0.1);
-}
 
 .learning-badge {
   font-size: 10px;
