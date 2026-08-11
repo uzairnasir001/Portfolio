@@ -70,7 +70,6 @@ const pages = [
   "experience",
   "education",
   "contact",
-  "stats",
 ];
 const nextLabels = {
   introduction: "About Me",
@@ -79,8 +78,7 @@ const nextLabels = {
   skills: "Experience",
   experience: "Education",
   education: "Contact",
-  contact: "Stats",
-  stats: "",
+  contact: "",
 };
 let current = "introduction";
 
