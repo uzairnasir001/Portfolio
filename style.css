@@ -504,16 +504,33 @@
 }
 
 .project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-size: 13px;
-  color: #888;
+  color: var(--text-secondary);
   text-decoration: none;
   margin-top: 4px;
-  transition: color 0.15s;
+  transition: color 0.15s ease;
   width: fit-content;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
 }
 
 .project-link:hover {
   color: var(--text-primary);
+}
+
+.project-link::after {
+  content: '→';
+  font-size: 14px;
+  transition: transform 0.15s ease;
+}
+
+.project-link:hover::after {
+  transform: translateX(2px);
 }
 
 @media (max-width: 900px) {

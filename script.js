@@ -246,136 +246,57 @@ window.addEventListener("resize", function () {
 
 const projectsData = [
   {
-    id: "nike",
-    title: "Nike Reimagined | Modern Redesign Concept",
+    id: "weather",
+    title: "Weather App | React.js",
     short:
-      "A sleek and modern redesign of Nike's official web experience built with React and Tailwind CSS.",
-    desc: "Nike Reimagined is a creative redesign project focused on delivering a refined, high-performance web experience inspired by Nike's global brand identity. It highlights a clean, minimal UI with smooth transitions, responsive layouts, and optimized performance across devices. The project demonstrates a balance of aesthetics and functionality for a real-world eCommerce feel.",
-    stack: ["React.js", "Tailwind CSS", "Vite", "Framer Motion", "Vercel"],
+      "A responsive weather dashboard built with React and Vite that fetches live weather data from the OpenWeatherMap API.",
+    desc: "This weather app gives users quick access to real-time weather information for any city. It includes a polished interface, live data fetching, and responsive design that works well across devices. The project demonstrates my frontend skills in API integration, state management, and UI development with React.",
+    stack: ["React.js", "Vite", "JavaScript", "OpenWeatherMap API", "CSS"],
     features: [
-      "Minimalist and modern user interface design",
-      "Fully responsive layouts optimized for all devices",
-      "Smooth page transitions and animations with Framer Motion",
-      "Optimized build process with Vite for fast loading",
-      "Deployed on Vercel for production-grade performance",
+      "Live weather information for any city search",
+      "Responsive and modern dashboard layout",
+      "Clean UI with mobile-friendly design",
+      "Dynamic data rendering from API responses",
+      "Deployed live for easy access and testing",
     ],
     challenges: [
-      "Maintaining brand consistency while reimagining Nike's design language.",
-      "Achieving smooth animations without affecting performance.",
-      "Ensuring pixel-perfect responsiveness across devices.",
-      "Optimizing load times for a better user experience.",
+      "Handling async API requests and error states gracefully.",
+      "Designing a clean weather dashboard that remains readable on smaller screens.",
+      "Improving data presentation for multiple weather conditions.",
     ],
     learnings: [
-      "Mastered efficient UI composition with React and Tailwind CSS.",
-      "Improved understanding of animation principles using Framer Motion.",
-      "Enhanced deployment workflow using Vercel and Vite integration.",
-      "Developed better practices for responsive and scalable frontend design.",
+      "Strengthened my knowledge of React component structure and state updates.",
+      "Improved API integration and handling asynchronous data flows.",
+      "Learned how to build a more polished and user-centric frontend experience.",
     ],
-    live: "#",
+    live: "https://weather-app-peach-omega-36.vercel.app/",
     github: "#",
   },
   {
-    id: "portfolio",
-    title: "Portfolio | Your Name",
+    id: "spotify",
+    title: "Spotify Clone | JavaScript",
     short:
-      "A dynamic portfolio showcasing my projects, skills, and contributions using the latest web technologies.",
-    desc: "A fully responsive personal portfolio website built to highlight my skills, projects, and experience. Designed with a clean dark aesthetic and smooth navigation to provide an engaging user experience.",
-    stack: ["HTML", "CSS", "JavaScript"],
+      "A music player-inspired UI built in JavaScript with dynamic song rendering and interactive controls.",
+    desc: "This Spotify-inspired clone focuses on creating a familiar and engaging music experience with a responsive interface and interactive controls. The project highlights my ability to build dynamic frontend experiences using JavaScript, including playlist logic, controls, and smooth user interaction.",
+    stack: ["JavaScript", "HTML", "CSS", "Responsive Design", "Audio UI"],
     features: [
-      "Clean dark theme with smooth section navigation",
-      "Fully responsive across all screen sizes",
-      "Interactive command palette with search",
-      "Dynamic project cards with detail views",
+      "Spotify-inspired music interface with dynamic track display",
+      "Interactive play, pause, previous, and next controls",
+      "Responsive layout for desktop and mobile screens",
+      "Audio playback experience with custom UI states",
+      "Clean, polished design built around a music streaming concept",
     ],
     challenges: [
-      "Building a single-file multi-section SPA without a framework.",
-      "Implementing a smooth command palette from scratch.",
-      "Keeping the codebase clean and maintainable.",
+      "Creating a realistic music-player interface with limited assets.",
+      "Synchronizing UI states with playback actions and song selection.",
+      "Making the design responsive while keeping usability high.",
     ],
     learnings: [
-      "Deepened understanding of vanilla JS DOM manipulation.",
-      "Learned effective CSS layout techniques without frameworks.",
-      "Improved overall UI/UX design sensibility.",
+      "Improved my JavaScript logic and DOM manipulation capabilities.",
+      "Learned to design interactive audio interfaces with better usability.",
+      "Deepened my understanding of responsive front-end UI design.",
     ],
-    live: "#",
-    github: "#",
-  },
-  {
-    id: "newshub",
-    title: "News Hub | Real-Time News Platform",
-    short:
-      "A real-time news platform delivering the latest headlines across various categories using the News API.",
-    desc: "News Hub is a responsive web application that fetches and displays real-time news articles from multiple categories. Users can browse top headlines, filter by category, and read full articles via external links.",
-    stack: ["HTML", "CSS", "JavaScript", "News API"],
-    features: [
-      "Real-time news fetching from the News API",
-      "Category-based filtering for easy browsing",
-      "Responsive card layout for all devices",
-      "Direct links to full articles",
-    ],
-    challenges: [
-      "Handling API rate limits gracefully.",
-      "Displaying varied image sizes consistently in cards.",
-      "Managing async data fetching and error states.",
-    ],
-    learnings: [
-      "Learned how to integrate and consume third-party REST APIs.",
-      "Improved async JavaScript and fetch API skills.",
-      "Practiced responsive grid layout design.",
-    ],
-    live: "#",
-    github: "#",
-  },
-  {
-    id: "freshmart",
-    title: "Freshmart Store | Modern Grocery Web App",
-    short:
-      "A clean, modern, and responsive grocery store web app built with React, Vite, Redux, and Tailwind CSS.",
-    desc: "Freshmart is a fully functional grocery store front-end application featuring product listings, a shopping cart, and category filtering. Built with a modern React stack for a fast and seamless shopping experience.",
-    stack: ["React.js", "Redux", "Vite", "Tailwind CSS"],
-    features: [
-      "Product listing with category filters",
-      "Shopping cart with quantity management",
-      "State management using Redux",
-      "Fast build and HMR with Vite",
-    ],
-    challenges: [
-      "Managing complex cart state with Redux.",
-      "Keeping UI consistent across many product types.",
-      "Optimizing re-renders for a smooth experience.",
-    ],
-    learnings: [
-      "Gained hands-on experience with Redux state management.",
-      "Improved component architecture skills in React.",
-      "Learned performance optimization techniques in React apps.",
-    ],
-    live: "#",
-    github: "#",
-  },
-  {
-    id: "github-viewer",
-    title: "GitHub Profile Viewer | Instant GitHub Insights",
-    short:
-      "An interactive web app to instantly view GitHub profiles with clean UI built using HTML, CSS, and JavaScript.",
-    desc: "GitHub Profile Viewer allows users to enter any GitHub username and instantly see their profile stats, repositories, followers, and more. Built with vanilla JavaScript and the GitHub REST API.",
-    stack: ["HTML", "CSS", "JavaScript", "GitHub API"],
-    features: [
-      "Search any GitHub username instantly",
-      "Displays profile stats, repos, and followers",
-      "Clean card-based UI",
-      "Error handling for invalid usernames",
-    ],
-    challenges: [
-      "Handling GitHub API rate limiting.",
-      "Designing a clean layout for varied profile data.",
-      "Providing meaningful error messages to users.",
-    ],
-    learnings: [
-      "Practiced working with the GitHub REST API.",
-      "Improved skills in dynamic DOM manipulation.",
-      "Learned better UX practices for search interfaces.",
-    ],
-    live: "#",
+    live: "https://spotify-clone-theta-sooty.vercel.app/",
     github: "#",
   },
 ];
@@ -405,20 +326,22 @@ function openProject(id) {
     .join("");
 
   document.getElementById("detail-links").innerHTML = `
-    <a class="btn-live" href="${p.live}" target="_blank">
-      Live
+    <a class="btn-live" href="${p.live}" target="_blank" rel="noopener noreferrer">
+      View Project
       <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
         <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
       </svg>
     </a>
-    <a class="btn-github-link" href="${p.github}" target="_blank">
-      Github
-      <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-        <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
-      </svg>
-    </a>`;
+    ${p.github && p.github !== "#" ? `
+      <a class="btn-github-link" href="${p.github}" target="_blank" rel="noopener noreferrer">
+        GitHub
+        <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+          <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+      </a>` : ""}
+  `;
 
   navigateTo("project-detail");
 }
